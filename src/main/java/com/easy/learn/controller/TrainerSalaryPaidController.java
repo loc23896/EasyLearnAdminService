@@ -1,6 +1,6 @@
 package com.easy.learn.controller;
 
-import callApi.TrainerSalaryService;
+import com.easy.learn.callApi.TrainerSalaryService;
 import com.easy.learn.consts.UrlPath;
 import com.easy.learn.dto.TrainerSalaryPaid.TrainerSalaryPaid;
 import org.springframework.beans.factory.annotation.Autowired;

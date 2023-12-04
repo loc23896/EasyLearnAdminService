@@ -1,4 +1,4 @@
-package callApi;
+package com.easy.learn.callApi;
 
 import com.easy.learn.consts.ApiPath;
 import com.easy.learn.dto.TrainerSalaryPaid.TrainerSalaryPaid;
