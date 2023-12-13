@@ -21,7 +21,7 @@ public class TrainerSalaryPaidController {
 
         model.addAttribute("salaryPaids", salaryPaids);
 
-        return "pages/salarypaids";
+        return "pages/finance_management/salarypaids";
     }
 }
 

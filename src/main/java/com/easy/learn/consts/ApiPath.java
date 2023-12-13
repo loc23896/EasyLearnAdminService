@@ -17,4 +17,8 @@ public interface ApiPath {
     String TRAINER_SALARY_GET_ALL = API + "/trainersalary/get-all";
 
     // end
+
+    String ADMIN_GET_INDEX = API+"/admin";
+
+
 }
