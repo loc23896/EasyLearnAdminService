@@ -32,4 +32,14 @@ public class AdminController {
         return "pages/admin/admin_dashboard";
     }
 
+    @GetMapping("/login")
+    public String login(){
+        return "pages/loginPage/login";
+    }
+
+    @GetMapping("/register")
+    public String register(){
+        return "pages/loginPage/register";
+    }
+
 }
