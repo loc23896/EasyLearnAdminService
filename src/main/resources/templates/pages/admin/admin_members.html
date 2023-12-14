@@ -2,14 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org">
 
-<div th:replace="pages/admin/admin_fragment/head :: head"></div>
+<div th:replace="pages/fragment/head :: head"></div>
 
 <body id="page-top">
 <!-- Page Wrapper -->
 <div id="wrapper">
 
   <!-- Sidebar -->
-  <div th:replace="pages/admin/admin_fragment/sidebar :: sidebar"></div>
+  <div th:replace="pages/fragment/sidebar :: sidebar"></div>
 
   <!-- End of Sidebar -->
 
@@ -20,7 +20,7 @@
     <div id="content">
 
       <!-- Topbar -->
-      <div th:replace="pages/admin/admin_fragment/topbar :: topbar"></div>
+      <div th:replace="pages/fragment/topbar :: topbar"></div>
       <!-- End of Topbar -->
 
       <!-- Navbar -->
@@ -40,7 +40,7 @@
           <!-- end Title page content-->
 
           <!-- Table -->
-          <div th:replace="pages/admin/admin_fragment/table :: table"></div>
+          <div th:replace="pages/fragment/table :: table"></div>
           <!-- END Table -->
 
           <!--end of table notification admin -->
@@ -49,7 +49,7 @@
         <!--end of table notification admin -->
 
         <!-- Footer -->
-        <div th:replace="pages/admin/admin_fragment/footer :: footer"></div>
+        <div th:replace="pages/fragment/footer :: footer"></div>
         <!-- End of Footer -->
 
       </div>
@@ -64,9 +64,9 @@
     </a>
 
     <!-- Logout Modal-->
-    <div th:replace="pages/admin/admin_fragment/modal_logout :: modal_logout"></div>
+    <div th:replace="pages/fragment/modal_logout :: modal_logout"></div>
 
     <!-- Bootstrap core JavaScript-->
-    <div th:replace="pages/admin/admin_fragment/script :: script"></div>
+    <div th:replace="pages/fragment/script :: script"></div>
 </body>
 </html>

@@ -31,4 +31,5 @@ public class AdminController {
     public String adminDashboard(){
         return "pages/admin/admin_dashboard";
     }
+
 }
