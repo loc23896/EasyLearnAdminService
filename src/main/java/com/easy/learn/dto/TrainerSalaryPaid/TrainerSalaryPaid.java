@@ -13,5 +13,5 @@ public class TrainerSalaryPaid {
     private Integer weekNumber;
     private Integer monthNumber;
     private Integer yearNumber;
-    private double totalNumber;
+    private Double totalNumber;
 }

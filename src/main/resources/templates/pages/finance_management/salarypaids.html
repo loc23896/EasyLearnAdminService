@@ -1,32 +1,58 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <title>test</title>
+    <!-- Add your CSS and other head elements here -->
 </head>
 <body>
-<table>
-    <thead>
-    <tr>
-        <th>#No</th>
-        <th>Id</th>
-        <th>weekNumber</th>
-        <th>yearNumber</th>
-        <th>totalNumber</th>
-    </tr>
-    </thead>
-    <tbody>
-    <th:block th:each="salaryPaid : ${salaryPaids}">
-        <tr>
-            <td th:text="${salaryPaid.trainerSalaryPaidId}">trainerSalaryPaidId</td>
-            <td th:text="${salaryPaid.id}">user-id</td>
-            <td th:text="${salaryPaid.weekNumber}">weekNumber</td>
-            <td th:text="${salaryPaid.monthNumber}">monthNumber</td>
-            <td th:text="${salaryPaid.yearNumber}">yearNumber</td>
-            <td th:text="${salaryPaid.totalNumber}">totalNumber</td>
-        </tr>
-    </th:block>
-    </tbody>
-</table>
+
+<!-- Your existing HTML content -->
+
+<div id="trainerSalaryContainer">
+    <!-- Display trainer salary information here using Thymeleaf -->
+    <ul th:each="trainerSalary : ${trainerSalaries}">
+        <li th:text="${trainerSalary.name} + ' - ' + ${trainerSalary.salary}"></li>
+    </ul>
+</div>
+
+<button id="loadTrainerSalariesButton">Load Trainer Salaries</button>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script th:inline="javascript">
+
+    $(document).ready(function () {
+        $("#loadTrainerSalariesButton").on("click", function () {
+            getAllTrainerSalaryPaid();
+        });
+
+        function getAllTrainerSalaryPaid() {
+            $.ajax({
+                type: "GET",
+                url: "http://localhost:9091/salarypaids",
+                dataType: "json",
+                success: function (data) {
+                    // Update the Thymeleaf container with the new data
+                    updateTrainerSalaryContainer(data);
+                },
+                error: function (error) {
+                    console.error("Error loading trainer salaries: " + error);
+                }
+            });
+        }
+
+        function updateTrainerSalaryContainer(data) {
+            // Use Thymeleaf to update the container with new data
+            var container = $("#trainerSalaryContainer");
+            container.empty();
+
+            $.each(data, function (index, trainerSalary) {
+                container.append("<li>" + trainerSalary.name + " - " + trainerSalary.salary + "</li>");
+            });
+        }
+    });
+
+</script>
+
+<!-- Add your other scripts and closing body/html tags here -->
+
 </body>
 </html>
