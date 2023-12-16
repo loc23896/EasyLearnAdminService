@@ -55,4 +55,9 @@ public class AdminController {
     public String changeProfile(){
         return "pages/admin/admin_profile_edit";
     }
+
+    @GetMapping("/admin/profile-other")
+    public String adminProfileOther(){
+        return "pages/admin/admin_profile_other";
+    }
 }
