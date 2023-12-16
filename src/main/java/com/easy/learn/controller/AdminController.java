@@ -41,4 +41,18 @@ public class AdminController {
         return "pages/loginPage/register";
     }
 
+    @GetMapping("/table")
+    public String table(){
+        return "pages/admin/admin_table";
+    }
+
+    @GetMapping("/profile")
+    public String profile(){
+        return "pages/admin/admin_profile";
+    }
+
+    @GetMapping("/profile/edit")
+    public String changeProfile(){
+        return "pages/admin/admin_profile_edit";
+    }
 }
