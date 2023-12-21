@@ -4,9 +4,3 @@ server:
 spring:
   profiles:
     active: dev
-
-  main:
-    banner-mode: off
-logging:
-  level:
-    root: warn

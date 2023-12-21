@@ -15,6 +15,13 @@ public interface ApiPath {
     String USER_DELETE = API + "/user/delete";
     //trainersalarypaid
     String TRAINER_SALARY_GET_ALL = API + "/trainersalary/get-all";
+    // manager
+    String MANAGER_SIGN_IN = API + "/manager/sign-in";
+    String MANAGER_GET_ALL = API + "/manager/get-all";
+    String MANAGER_GET_UUID = API + "/manager/get-uuid";
+    String MANAGER_CREATE = API + "/manager/create";
+    String MANAGER_UPDATE = API + "/manager/update";
+    String MANAGER_DELETE = API + "/manager/delete";
 
     // end
 
