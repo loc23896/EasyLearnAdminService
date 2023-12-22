@@ -46,6 +46,13 @@
 ::before {
   box-sizing: border-box;
 }
+
+.custom-img{
+    width:100%;
+    height:200px;
+}
+
+
 html {
   font-family: sans-serif;
   line-height: 1.15;
