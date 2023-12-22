@@ -1,14 +1,15 @@
-package com.easy.learn.dto.TrainerSalaryPaid;
+package com.easy.learn.dto.TrainerSalaryPaidSummary;
 
-import com.easy.learn.dto.ResponseDTO;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class TrainerSalaryPaidDTO extends ResponseDTO<TrainerSalaryPaid> {
+public class TrainerSalaryPaidSummary implements Serializable {
     private Long id;
     private String trainerSalaryPaidId;
     private Integer weekNumber;
