@@ -8,7 +8,7 @@
     <!-- Sidebar - Brand -->
     <a
             class="sidebar-brand d-flex align-items-center justify-content-center"
-            th:href="@{/admin}"
+            th:href="@{/customer-care}"
     >
         <div class="sidebar-brand-icon">
             <img
@@ -17,7 +17,7 @@
                     alt="logo-img"
             />
         </div>
-        <div class="sidebar-brand-text mx-3">Admin Ministrator<sup></sup></div>
+        <div class="sidebar-brand-text mx-3">Customer Care Management<sup></sup></div>
     </a>
 
     <!-- Divider -->
@@ -25,7 +25,7 @@
 
     <!-- Nav Item - Dashboard -->
     <li class="nav-item active">
-        <a class="nav-link" th:href="@{/admin/dashboard}">
+        <a class="nav-link" th:href="@{/customer-care/dashboard}">
             <i class="fas fa-fw fa-chart-area"></i>
             <span>Dashboard</span></a
         >
@@ -48,7 +48,7 @@
                 aria-controls="collapseTwo"
         >
             <i class="fas fa-fw fa-home"></i>
-            <span>Category management</span>
+            <span>Category members</span>
         </a>
         <div
                 id="collapseTwo"
@@ -57,20 +57,11 @@
                 data-parent="#accordionSidebar"
         >
             <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Management style:</h6>
-                <a class="collapse-item" th:href="@{/admin/finance}">Finance</a>
-                <a class="collapse-item" th:href="@{/admin/members}">Members</a>
-                <a class="collapse-item" th:href="@{/admin/customer-care}">Customer care</a>
+                <h6 class="collapse-header">Member style:</h6>
+                <a class="collapse-item" th:href="@{/customer-care/student}">Student</a>
+                <a class="collapse-item" th:href="@{/customer-care/trainer}">Trainer</a>
             </div>
         </div>
-    </li>
-
-    <!-- Nav Item - Utilities Collapse Menu -->
-    <li class="nav-item">
-        <a class="nav-link" th:href="@{/register}">
-            <i class="fas fa-fw fa-wrench"></i>
-            <span>Create account</span>
-        </a>
     </li>
 
     <!-- Divider -->
@@ -83,7 +74,7 @@
 
     <!-- Nav Item - Tables -->
     <li class="nav-item">
-        <a class="nav-link" th:href="@{/table}">
+        <a class="nav-link" th:href="@{/customer-care/table}">
             <i class="fas fa-fw fa-table"></i>
             <span>Tables</span></a
         >

@@ -9,7 +9,7 @@
     <div id="wrapper">
 
       <!-- Sidebar -->
-      <div th:replace="pages/fragment/sidebar :: sidebar"></div>
+      <div th:replace="pages/customerCare/customerCare_fragment/sidebar/sidebar_customerCare"></div>
 
       <!-- End of Sidebar -->
 
@@ -24,17 +24,13 @@
           <!-- End of Topbar -->
 
           <!--Navbar-->
-          <div th:replace="pages/admin/admin_fragment/navbar/navbar_dashboard :: navbar"></div>
+          <div th:replace="pages/customerCare/customerCare_fragment/navbar/navbar_customerCare :: navbar"></div>
           <!--End of navbar -->
 
           <!-- Begin Page Content -->
           <div class="container-fluid pt-2">
-
-            <!-- Start Dashboard -->
             <div th:replace="pages/fragment/dashboard :: dashboard"></div>
-            <!-- End Dashboard -->
-
-          <!-- End of page content -->
+            <div th:replace="pages/customerCare/customerCare_fragment/table/table_customerCare :: table"></div>
         </div>
           <!-- END Page Content -->
 
