@@ -28,21 +28,26 @@ public class MemberController {
         return "pages/admin/customerCare_managements/detail_student_replay";
     }
 
-
     @GetMapping("/trainer/detail")
     public String adminMemberTrainerDetail(){
         return "pages/admin/member_managements/detail_trainer";
     }
 
-
-
-    //chưa viết
     @GetMapping("/trainer/course")
     public String adminMemberTrainerCourse(){
         return "pages/admin/member_managements/trainer_course";
     }
 
 
+    @GetMapping("/trainer/course/detail")
+    public String adminMemberTrainerCourseDetail(){
+        return "pages/admin/member_managements/trainer_course_detail";
+    }
+
+    @GetMapping("/trainer/course/detail/replay")
+    public String adminMemberTrainerCourseDetailReplay(){
+        return "pages/admin/member_managements/trainer_course_detail_replay";
+    }
 
 
 

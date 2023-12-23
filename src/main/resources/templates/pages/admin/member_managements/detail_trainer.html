@@ -24,7 +24,7 @@
             <!-- End of Topbar -->
 
             <!-- Navbar -->
-            <div th:replace="pages/admin/admin_fragment/navbar/member_trainer_course :: navbar"></div>
+            <div th:replace="pages/admin/admin_fragment/navbar/member_trainer_detail :: navbar"></div>
             <!-- End Navbar -->
 
             <!-- Begin Page Content -->
@@ -40,7 +40,9 @@
                     <!-- end Title page content-->
 
                     <!-- Table -->
-                    <div th:replace="pages/admin/admin_fragment/admin_table/member_trainer_course :: table"></div>
+                    <div class="container-fluid pt-2">
+                        <div th:replace="pages/admin/admin_fragment/profile/member_tra_detail_other :: profile_other"></div>
+                    </div>
                     <!-- END Table -->
 
                     <!--end of table notification admin -->
