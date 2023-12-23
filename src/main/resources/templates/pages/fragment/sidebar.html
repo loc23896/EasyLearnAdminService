@@ -48,7 +48,7 @@
                 aria-controls="collapseTwo"
         >
             <i class="fas fa-fw fa-home"></i>
-            <span>Category management</span>
+            <span>Finance management</span>
         </a>
         <div
                 id="collapseTwo"
@@ -57,21 +57,47 @@
                 data-parent="#accordionSidebar"
         >
             <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Management style:</h6>
-                <a class="collapse-item" th:href="@{/admin/finance}">Finance</a>
-                <a class="collapse-item" th:href="@{/admin/members}">Members</a>
-                <a class="collapse-item" th:href="@{/admin/customer-care}">Customer care</a>
+                <h6 class="collapse-header">Member style:</h6>
+                <a class="collapse-item" th:href="@{/admin/finance/student}">Student</a>
+                <a class="collapse-item" th:href="@{/admin/finance/trainer}">Trainer</a>
+<!--                <a class="collapse-item" th:href="@{/admin/customer-care}">Customer care</a>-->
             </div>
         </div>
     </li>
 
     <!-- Nav Item - Utilities Collapse Menu -->
     <li class="nav-item">
-        <a class="nav-link" th:href="@{/register}">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+           aria-expanded="true" aria-controls="collapseUtilities">
             <i class="fas fa-fw fa-wrench"></i>
-            <span>Create account</span>
+            <span>Member management</span>
         </a>
+        <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
+             data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Member style</h6>
+                <a class="collapse-item" th:href="@{/admin/member/student}">Student</a>
+                <a class="collapse-item" th:href="@{/admin/member/trainer}">Trainer</a>
+            </div>
+        </div>
     </li>
+
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
+           aria-expanded="true" aria-controls="collapsePages">
+            <i class="fas fa-fw fa-folder"></i>
+            <span>Customer care</span>
+        </a>
+        <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Customer style</h6>
+                <a class="collapse-item" th:href="@{/admin/customerCare/student}">Student</a>
+                <a class="collapse-item" th:href="@{/admin/customerCare/trainer}">Trainer</a>
+            </div>
+        </div>
+    </li>
+
+    <!-- Nav Item - Utilities Collapse Menu -->
 
     <!-- Divider -->
     <hr class="sidebar-divider" />
@@ -83,7 +109,7 @@
 
     <!-- Nav Item - Tables -->
     <li class="nav-item">
-        <a class="nav-link" th:href="@{/table}">
+        <a class="nav-link" th:href="@{/admin/table}">
             <i class="fas fa-fw fa-table"></i>
             <span>Tables</span></a
         >

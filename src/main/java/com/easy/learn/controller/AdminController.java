@@ -1,20 +1,13 @@
 package com.easy.learn.controller;
 
-import com.easy.learn.callApi.ManagerService;
-import com.easy.learn.dto.Manager.ManagerDTO;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
 
 
 @Controller
 public class AdminController {
     @GetMapping("/admin")
     public String index (){
-        System.out.println("access");
         return "pages/admin/index";
     }
 
@@ -36,5 +29,35 @@ public class AdminController {
     @GetMapping("/admin/dashboard")
     public String adminDashboard(){
         return "pages/admin/admin_dashboard";
+    }
+
+    @GetMapping("/login")
+    public String login(){
+        return "pages/loginPage/login";
+    }
+
+    @GetMapping("/register")
+    public String register(){
+        return "pages/loginPage/register";
+    }
+
+    @GetMapping("/table")
+    public String table(){
+        return "pages/admin/admin_table";
+    }
+
+    @GetMapping("/profile")
+    public String profile(){
+        return "pages/admin/admin_profile";
+    }
+
+    @GetMapping("/profile/edit")
+    public String changeProfile(){
+        return "pages/admin/admin_profile_edit";
+    }
+
+    @GetMapping("/admin/profile-other")
+    public String adminProfileOther(){
+        return "pages/admin/admin_profile_other";
     }
 }

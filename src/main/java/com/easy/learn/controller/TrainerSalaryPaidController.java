@@ -59,9 +59,5 @@ public class TrainerSalaryPaidController {
         return "redirect:/trainersalary/list";
     }
 
-    @GetMapping("/hi")
-    public String testHi (){
-        return "abc";
-    }
 
 }
