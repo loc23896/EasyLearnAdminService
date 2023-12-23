@@ -9,7 +9,7 @@
                         <div class="d-flex flex-column align-items-center text-center">
                             <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Admin" class="rounded-circle" width="150">
                             <div class="mt-3">
-                                <h4>Trainer01123</h4>
+                                <h4>chipheo123</h4>
                                 <p class="text-secondary mb-1">Trainer</p>
                                 <div class="row d-flex my-2 justify-content-center align-items-center">
                                     <div class="col-sm-6">
@@ -25,8 +25,7 @@
                 </div>
             </div>
 
-<!--            start form info                                           -->
-            <div class="col-md-8 mt-3">
+            <div class="col-md-8">
                 <div class="card">
                     <div class="card-body">
                         <div class="row">
@@ -73,11 +72,59 @@
                                 15-12-2023
                             </div>
                         </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <h6 class="mb-0">Title:</h6>
+                            </div>
+                            <div class="col-sm-9 text-secondary">
+                                Update Course cou01
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <h6 class="mb-0">Problem</h6>
+                            </div>
+                            <div class="col-sm-9 text-secondary">
+                                Course
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <h6 class="mb-0">Date - Time</h6>
+                            </div>
+                            <div class="col-sm-9 text-secondary">
+                                Get ngày giờ gửi
+                            </div>
+                        </div>
+
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <h6 class="mb-0 pt-2">Status</h6>
+                            </div>
+                            <div class="col-sm-9 text-secondary">
+                                <button class="btn-info btn">Pending</button>
+                            </div>
+                        </div>
+
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <h6 class="mb-0">File</h6>
+                            </div>
+                            <div class="col-sm-9 text-secondary">
+                                <a href="#">.pdf</a>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
-<!--            End form info                                           -->
         </div>
+
 
         <div class="row gutters-sm ">
             <div class="card w-100">
@@ -126,9 +173,9 @@
                             <div class="col-sm-9 text-secondary px-0 d-flex">
                                 <div class="col-sm-3">
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked="">
                                         <label class="form-check-label" for="flexRadioDefault2">
-                                            Active
+                                            Pending
                                         </label>
                                     </div>
                                 </div>
@@ -136,7 +183,15 @@
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                                         <label class="form-check-label" for="flexRadioDefault1">
-                                            Inactive
+                                            Confirm
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                                        <label class="form-check-label" for="flexRadioDefault3">
+                                            Cancelled
                                         </label>
                                     </div>
                                 </div>
@@ -170,7 +225,7 @@
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                            <a th:href="@{/member/trainer/detail}" class="btn btn-primary">Yes</a>
+                                            <a th:href="@{/member/trainer/course/detail}" class="btn btn-primary">Yes</a>
                                         </div>
                                     </div>
                                 </div>
@@ -180,7 +235,4 @@
                 </div>
             </div>
         </div>
-
-
-
 </div>
